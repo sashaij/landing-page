@@ -1,5 +1,37 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.placeholder {
+    height: 200px;
+    width: 400px;
+    background-color: #e5e7eb;
 }
