@@ -7,7 +7,38 @@ body {
 .header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-color: #1f2937;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 20pt;
+    color: #e5e7eb;
+    padding: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card {
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
 }
 
 a:link {
@@ -24,14 +55,43 @@ ul {
     gap: 15px;
   }
 
+a {
+    color: #000000;
+}
+
 .middle-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #1f2937;
 }
 
 .placeholder {
     height: 200px;
     width: 400px;
     background-color: #e5e7eb;
+}
+
+body > .header {
+    flex: .05
+}
+
+body > .footer {
+    flex: .05
+}
+
+body > .middle-section {
+    flex: .225
+}
+
+body > .placeholder {
+    flex: .225
+}
+
+body > .info {
+    flex: .225
+}
+
+body > .caards-template {
+    flex: .225
 }
