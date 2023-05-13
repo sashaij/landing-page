@@ -7,9 +7,11 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #1f2937;
     font-family: Arial, Helvetica, sans-serif;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 .logo {
@@ -19,6 +21,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-basis: 700px;
     font-weight: 1000;
     font-size: 35px;
 }
@@ -26,8 +29,9 @@ body {
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+    flex-basis: 700px;
 }
 
 .info {
@@ -96,7 +100,6 @@ button a:link {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 15px;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -106,8 +109,10 @@ ul {
 .middle-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #1f2937;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 /*read about flex-basis*/
