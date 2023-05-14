@@ -2,6 +2,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -9,7 +10,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: #1f2937;
-    font-family: Arial, Helvetica, sans-serif;
     padding-left: 400px;
     padding-right: 400px;
 }
@@ -48,27 +48,36 @@ body {
     font-size: 48px;
     font-weight: 1000;
     color: #f9faf8;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .info-text {
     font-size: 18px;
     color: #fef9f9;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 button {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     background-color: #3882f6;
     border-radius: 5px;
     border: 2px solid #f9faf8;
+}
+
+.cards-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 38px;
+    font-weight: 1000;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .cards {
@@ -76,7 +85,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .card {
@@ -85,6 +94,83 @@ button {
     width: 150px;
     height: 150px;
     padding: 10px;
+}
+
+.card-text {
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 350px;
+    background-color: #e5e7eb;
+    gap: 15px;
+}
+
+.q-text {
+    font-size: 40px;
+    text-align: start;
+    width: 50%;
+    font-weight: 100;
+}
+
+.q-credit {
+    padding-left: 17%;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.lower-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9faf8;
+    flex-basis: 350px;
+}
+
+.l-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+    height: 100px;
+    width: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px;
+}
+
+.d-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.description-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #fef9f9;
+}
+
+.description {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.footer {
+    display: flex;
 }
 
 a:link {
@@ -143,6 +229,6 @@ body > .info {
     flex: .225
 }
 
-body > .caards-template {
+body > .cards-template {
     flex: .225
 }
