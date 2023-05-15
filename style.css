@@ -10,6 +10,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: #1f2937;
+    flex-wrap: nowrap;
+    flex: 1 0 1200px;
     padding-left: 400px;
     padding-right: 400px;
 }
@@ -21,9 +23,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-basis: 700px;
+    flex: 1 0 300px;
     font-weight: 1000;
     font-size: 35px;
+    min-width: 300px;
 }
 
 .links {
@@ -32,6 +35,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     flex-basis: 700px;
+    min-width: 535px;
 }
 
 .info {
@@ -39,6 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    flex: 1 0 600px;
     gap: 5px;
     width: 600px;
     height: 300px;
@@ -54,6 +59,7 @@ body {
     font-size: 18px;
     color: #fef9f9;
 }
+
 
 
 button {
@@ -86,6 +92,8 @@ button {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-basis: 400px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -207,6 +215,8 @@ ul {
     height: 300px;
     width: 600px;
     background-color: #e5e7eb;
+    display: flex;
+    flex: 1 0 600px;
 }
 
 body > .header {
