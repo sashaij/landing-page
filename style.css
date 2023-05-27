@@ -8,12 +8,14 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1f2937;
-    flex-wrap: nowrap;
-    flex: 1 0 1200px;
-    padding-left: 400px;
-    padding-right: 400px;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    /*padding-left: 250px;
+    padding-right: 400px;*/
+
+    /* read about ratio eg 'flex' property */
 }
 
 .logo {
@@ -23,7 +25,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 1 0 660px;
+    flex: 0 0 830px;
     font-weight: 1000;
     font-size: 35px;
 }
@@ -31,20 +33,40 @@ body {
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    flex: 1 0 660px;
+    flex: 0 0 490px;
 }
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    background-color: #1f2937;
+}
+    /*padding-left: 400px;
+    padding-right: 400px;*/
 
 .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex: 1 0 660px;
+    flex-wrap: nowrap;
+    flex: 0 0 660px;
     gap: 5px;
     width: 600px;
     height: 300px;
+}
+
+.placeholder {
+    height: 300px;
+    width: 600px;
+    background-color: #e5e7eb;
+    display: flex;
+    flex: 0 0 660px;
 }
 
 .info-header {
@@ -103,7 +125,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     flex-basis: 400px;
     flex-wrap: nowrap;
 }
@@ -214,27 +236,13 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    padding-left: 0px;
   }
 
 
-.middle-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #1f2937;
-    padding-left: 400px;
-    padding-right: 400px;
-}
-
 /*read about flex-basis*/
 
-.placeholder {
-    height: 300px;
-    width: 600px;
-    background-color: #e5e7eb;
-    display: flex;
-    flex: 1 0 660px;
-}
+
 
 body > .header {
     flex: .05
