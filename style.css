@@ -1,21 +1,21 @@
 body {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    min-width: 1085px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #1f2937;
-    flex-wrap: wrap;
-    flex: 0 1 auto;
-    /*padding-left: 250px;
-    padding-right: 400px;*/
-
-    /* read about ratio eg 'flex' property */
+    flex-wrap: nowrap;
+    flex: 0 1 1085px;
+    gap: 300px;
+    padding: 25px;
 }
 
 .logo {
@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 0 0 830px;
+    flex: 0 0 215px;
     font-weight: 1000;
     font-size: 35px;
 }
@@ -35,19 +35,19 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex: 0 0 490px;
+    flex: 0 0 492px;
+    flex-wrap: nowrap;
 }
+
 
 .middle-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 0 0 1085px;
+    flex-wrap: nowrap;
     background-color: #1f2937;
 }
-    /*padding-left: 400px;
-    padding-right: 400px;*/
 
 .info {
     display: flex;
@@ -55,18 +55,20 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
-    flex: 0 0 660px;
+    flex: 0 0 305px;
     gap: 5px;
-    width: 600px;
     height: 300px;
 }
 
 .placeholder {
+    display: flex;
+    flex-direction: row;
+    min-width: 492;
     height: 300px;
-    width: 600px;
+    width: 660px;
     background-color: #e5e7eb;
     display: flex;
-    flex: 0 0 660px;
+    flex: 0 1 660px;
 }
 
 .info-header {
@@ -145,17 +147,31 @@ button {
     padding: 5px;
 }
 
+.quote-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
 .quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 350px;
+    flex: 1 0 auto;
     background-color: #e5e7eb;
     gap: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
+
+
 .q-text {
+    display: block;
+    width: 650px;
     font-size: 40px;
     text-align: start;
     width: 50%;
@@ -163,6 +179,8 @@ button {
 }
 
 .q-credit {
+    display: block;
+    width: 200px;
     padding-left: 17%;
     font-size: 36px;
     font-weight: 900;
@@ -182,15 +200,12 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex: 0 1 800px;
     gap: 100px;
     background-color: #3882f6;
     border: 1px solid #3882f6;
     height: 100px;
-    width: 800px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 20px 100px 20px 100px;
     border-radius: 10px;
 }
 
@@ -238,9 +253,6 @@ ul {
     gap: 15px;
     padding-left: 0px;
   }
-
-
-/*read about flex-basis*/
 
 
 
