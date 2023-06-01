@@ -161,6 +161,11 @@ button {
     align-items: center;
 }
 
+.q-day {
+    font-size: 40px;
+    color: #404040;
+}
+
 .quote {
     display: flex;
     flex-direction: column;
